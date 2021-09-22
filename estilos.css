@@ -1,0 +1,172 @@
+/*----------------------------------------------------------------*/
+/* ---------------- Configuración de la cuadrícula ---------------*/
+/*----------------------------------------------------------------*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header vertical_navbar"
+      "section section section vertical_navbar"
+      "section section section vertical_navbar"
+      "section section section vertical_navbar";
+  }
+  
+  #vertical_navbar { grid-area: vertical_navbar; }
+  #header { grid-area: header; }
+  #section { grid-area: section; }
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container * {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*----------------------------------------------------------------*/
+/* ---------------Estilo para la pagina priencipal ---------------*/
+/*----------------------------------------------------------------*/
+  
+#header {
+  font-size: 35px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#vertical_navbar{
+  border: rgb(15, 64, 104) 2px solid;
+  text-align: center;
+  margin: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: rgb(15, 64, 104);
+  color: white;
+}
+
+#logo_navbar{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#info_navbar {
+  font-size: 18px;
+  position: relative;
+}
+
+#info_navbar a{
+  width: 80%;
+  height: 45px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#btn_Registro{
+  width: 80%;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: rgb(15, 64, 104);
+  border: rgb(255, 255, 255) 2px solid;
+
+}
+
+#btn_Registro:hover{
+  background-color: rgb(15, 64, 104);
+  border: rgb(0, 0, 0) 2px solid;
+  cursor: pointer;
+}
+
+#section p{
+  text-align: center;
+  margin: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+
+}
+
+
+/*----------------------------------------------------------------*/
+/* ---------------Estilo para la pagina de registro --------------*/
+/*----------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('code.jpg');
+}
+
+#form_registrarse{
+  width: 400px;
+  background: rgb(15, 64, 104);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  font-family: "calibri";
+  color: white;
+
+  box-shadow: 5px 5px 30px rgb(116, 114, 114);
+
+}
+
+#form_registrarse h1{
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "calibri";
+}
+
+.dialog{
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 12px;
+  border: 1px solid #cacbce;
+  background: rgb(15, 64, 104);
+}
+
+#form_registrarse p{
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#form_registrarse a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+
+#btn_registrar_usuario{
+  width: 100%;
+  background: rgb(15, 64, 104);
+  border: rgb(255, 255, 255) 2px solid;
+  padding: 12px; 
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+#form_registrarse a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+#btn_registrar_usuario:hover{
+  background: rgb(15, 64, 104);
+  border: rgb(0, 0, 0) 2px solid;
+}

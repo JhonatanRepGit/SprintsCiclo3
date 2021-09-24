@@ -13,11 +13,15 @@
       "section section section vertical_navbar"
       "section section section vertical_navbar"
       "section section section vertical_navbar";
+
+      font-family: 'Open Sans Condensed', sans-serif;
+
   }
   
   #vertical_navbar { grid-area: vertical_navbar; }
   #header { grid-area: header; }
   #section { grid-area: section; }
+  
   
   html, body , .container {
     height: 100%;
@@ -37,16 +41,14 @@
   
 #header {
   font-size: 25px;
-  font-family: 'Open Sans Condensed', sans-serif;
+
   text-align: center;
   margin: 15px;
 }
 
 #vertical_navbar{
-  border: rgb(15, 64, 104) 2px solid;
   text-align: center;
   margin: 10px;
-  font-family: 'Open Sans Condensed', sans-serif;
   background-color: rgb(15, 64, 104);
   color: white;
 }
@@ -58,7 +60,14 @@
 
 #info_navbar {
   font-size: 17px;
-  position: relative;
+
+
+  background-color: rgb(15, 64, 104);
+  text-align: center;
+  margin: 10px;
+
+  color: white;
+
 }
 
 #info_navbar a{
@@ -161,4 +170,5 @@ text-decoration: none;
 #btn_registrar_usuario:hover{
   background: rgb(15, 64, 104);
   border: rgb(0, 0, 0) 2px solid;
+  cursor: pointer;
 }

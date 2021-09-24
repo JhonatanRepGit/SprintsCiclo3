@@ -32,14 +32,14 @@
   }
 
 /*----------------------------------------------------------------*/
-/* ---------------Estilo para la pagina priencipal ---------------*/
+/* ---------------Estilo para la pagina principal ---------------*/
 /*----------------------------------------------------------------*/
   
 #header {
-  font-size: 35px;
+  font-size: 25px;
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
-  margin-top: 15px;
+  margin: 15px;
 }
 
 #vertical_navbar{
@@ -53,11 +53,11 @@
 
 #logo_navbar{
   font-size: 20px;
-  margin-top: 15px;
+  margin: 25px;
 }
 
 #info_navbar {
-  font-size: 18px;
+  font-size: 17px;
   position: relative;
 }
 
@@ -66,7 +66,8 @@
   height: 45px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #btn_Registro{
@@ -84,15 +85,6 @@
   border: rgb(0, 0, 0) 2px solid;
   cursor: pointer;
 }
-
-#section p{
-  text-align: center;
-  margin: 30px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 25px;
-
-}
-
 
 /*----------------------------------------------------------------*/
 /* ---------------Estilo para la pagina de registro --------------*/
